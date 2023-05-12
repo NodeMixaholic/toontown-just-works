@@ -65,7 +65,7 @@ lDonaldsDreamland = "Donut's Dreamland"
 lMinniesMelodyland = "Melodyland"
 lToontownCentral = 'Toontown Central'
 lToonHQ = 'Toon HQ'
-lSellbotHQ = 'Sell HQ'
+lSellbotHQ = 'Sales HQ'
 lGoofySpeedway = 'The Speedway'
 lOutdoorZone = "Chip 'n Dip's Acorn Acres"
 lGolfZone = "Chip 'n Dip's MiniGolf"
@@ -96,18 +96,18 @@ GlobalStreetNames = {20000: ('to', 'on', 'Tutorial Terrace'),
  9200: ('to', 'on', 'Pajama Place'),
  9300: ('to', 'on', 'Bedtime Boulevard'),
  10000: ('to the', 'in the', 'Bossbot Country Club'),
- 10100: ('to the', 'in the', 'Boss HQ Lobby'),
+ 10100: ('to the', 'in the', 'Corp HQ Lobby'),
  10200: ('to', 'in', 'The Clubhouse'),
  10500: ('to', 'in', 'The Front Three'),
  10600: ('to', 'in', 'The Middle Six'),
  10700: ('to', 'in', 'The Back Nine'),
- 11000: ('to the', 'in the', 'Sell HQ Courtyard'),
- 11100: ('to the', 'in the', 'Sell HQ Lobby'),
+ 11000: ('to the', 'in the', 'Sales HQ Courtyard'),
+ 11100: ('to the', 'in the', 'Sales HQ Lobby'),
  11200: ('to the', 'in the', 'Sellbot Factory'),
  11500: ('to the', 'in the', 'Sellbot Factory'),
  11600: ('to the', 'in the', 'Sellbot Megacorp'),
  12000: ('to the', 'in the', 'Cashbot Train Yard'),
- 12100: ('to the', 'in the', 'Cashbot HQ Lobby'),
+ 12100: ('to the', 'in the', 'Money HQ Lobby'),
  12500: ('to the', 'in the', 'Cashbot Coin Mint'),
  12600: ('to the', 'in the', 'Cashbot Dollar Mint'),
  12700: ('to the', 'in the', 'Cashbot Bullion Mint'),
@@ -127,9 +127,9 @@ OutdoorZone = ('to', 'in', lOutdoorZone)
 FunnyFarm = ('to the', 'in the', 'Funny Farm')
 GoofySpeedway = ('to', 'in', lGoofySpeedway)
 DonaldsDreamland = ('to', 'in', lDonaldsDreamland)
-BossbotHQ = ('to', 'in', 'Boss HQ')
-SellbotHQ = ('to', 'in', 'Sell HQ')
-CashbotHQ = ('to', 'in', 'Cashbot HQ')
+BossbotHQ = ('to', 'in', 'Corp HQ')
+SellbotHQ = ('to', 'in', 'Sales HQ')
+CashbotHQ = ('to', 'in', 'Money HQ')
 LawbotHQ = ('to', 'in', 'Law HQ')
 Tutorial = ('to the', 'in the', 'Toon-torial')
 MyEstate = ('to', 'in', 'your house')
@@ -505,7 +505,7 @@ QuestsItemDict = {1: ['Pair of Glasses', 'Pairs of Glasses', 'a '],
  3025: ['Knitting Needle', 'Knitting Needles', 'a '],
  3026: ['Alibi', 'Alibis', 'an '],
  3027: ['External Temperature Sensor', 'External Temperature Sensors', 'an '],
- 6001: ['Cashbot HQ Plans', 'Cashbot HQ Plans', 'some '],
+ 6001: ['Money HQ Plans', 'Money HQ Plans', 'some '],
  6002: ['Rod', 'Rods', 'a '],
  6003: ['Drive Belt', 'Drive Belts', 'a '],
  6004: ['Pair of Pincers', 'Pairs of Pincers', 'a '],
@@ -868,7 +868,7 @@ QuestDialogDict = {
  3252: {QUEST: "Ok, spill the beans.\x07What's that you say?\x07Sellbot Headquarters?? Oh no!!! Something must be done.\x07We must notify Judge McIntosh - she'll know what to do.\x07Go at once and tell her what you have found out. She's just down the street."},
  3253: {QUEST: "Yes, can I help you? I'm very busy.\x07Eh? Cog Headquarters?\x07Eh? Nonsense. That could never happen.\x07You must be mistaken. Preposterous.\x07Eh? Don't argue with me.\x07Ok then, bring back some proof.\x07If Sellbots really are building this Cog HQ, any Cog there will be carrying blueprints.\x07Cogs love paperwork, you know?\x07Defeat Sellbots in there until you find blueprints.\x07Bring them back here and maybe I'll believe you."},
  3254: {QUEST: "You again, eh? Blueprints? You have them?\x07Let me see those! Hmmm... A factory?\x07That must be where they are building the Sellbots... And what's this?\x07Yes, just what I suspected. I knew it all along.\x07They are building a Sellbot Cog Headquarters.\x07This is not good. Must make some phone calls. Very busy. Goodbye!\x07Eh? Oh yes, take these blueprints back to Detective Lima.\x07She can make more sense of them.",
-        COMPLETE: "What did Judge McIntosh say?\x07We were right? Oh no. Let's see those blueprints.\x07Hmmm... Looks like Sellbots constructed a factory with machinery for building Cogs.\x07Sounds very dangerous. Stay out until you have more Laff points.\x07When you have more Laff points, we have much more to learn about Sell HQ.\x07For now, nice work, here is your reward."},
+        COMPLETE: "What did Judge McIntosh say?\x07We were right? Oh no. Let's see those blueprints.\x07Hmmm... Looks like Sellbots constructed a factory with machinery for building Cogs.\x07Sounds very dangerous. Stay out until you have more Laff points.\x07When you have more Laff points, we have much more to learn about Sales HQ.\x07For now, nice work, here is your reward."},
  3255: {QUEST: '_toNpcName_ is investigating Sellbot Headquarters.\x07Go see if you can help._where_'},
  3256: {QUEST: '_toNpcName_ is investigating Sellbot Headquarters.\x07Go see if you can help._where_'},
  3257: {QUEST: '_toNpcName_ is investigating Sellbot Headquarters.\x07Go see if you can help._where_'},
@@ -877,9 +877,9 @@ QuestDialogDict = {
  3260: {QUEST: 'Oh good, you\'re back. Let\'s see what you found....\x07"Attn Sellbots:"\x07"Sellbot Towers has installed a new security system to keep all Toons out."\x07"Toons caught in Sellbot Towers will be detained for questioning."\x07"Please meet in the lobby for appetizers to discuss."\x07"Signed, Mingler"\x07Very interesting... I\'ll pass on this information immediately.\x07Please bring a third memo back.'},
  3261: {QUEST: 'Excellent job _avName_! What does the memo say?\x07"Attn Sellbots:"\x07"Toons have somehow found a way to infiltrate Sellbot Towers."\x07"I\'ll call you tonight during dinner to give you the details."\x07"Signed, Telemarketer"\x07Hmmm... I wonder how Toons are breaking in....\x07Please bring back one more memo and I think we\'ll have enough info for now.',
         COMPLETE: 'I knew you could do it! Ok, the memo says....\x07"Attn Sellbots:"\x07"I was having lunch with Mr. Hollywood yesterday."\x07"He reports that the V.P. is very busy these days."\x07"He will only be taking appointments from Cogs that deserve a promotion."\x07"Forgot to mention, Gladhander is golfing with me on Sunday."\x07"Signed, Name Dropper"\x07Well... _avName_, this has been very helpful.\x07Here is your reward.'},
- 3262: {QUEST: "_toNpcName_ has some new information about the Sell HQ Factory.\x07Go see what he's got._where_"},
+ 3262: {QUEST: "_toNpcName_ has some new information about the Sales HQ Factory.\x07Go see what he's got._where_"},
  3263: {GREETING: 'Hi buddy!',
-        QUEST: 'I\'m Coach Zucchini, but you can just call me Coach Z.\x07I put the "squash" in squash and stretch, if you know what I mean.\x07Listen, Sellbots have finished an enormous factory to pump out Sellbots 24 hours a day.\x07Get a group of Toon buddies together and squash the factory!\x07Inside Sell HQ, look for the tunnel to the Factory then board the Factory elevator.\x07Make sure you have full gags, full Laff points, and some strong Toons as guides.\x07Defeat the Foreman inside the factory to slow the Sellbot progress.\x07Sounds like a real workout, if you know what I mean.',
+        QUEST: 'I\'m Coach Zucchini, but you can just call me Coach Z.\x07I put the "squash" in squash and stretch, if you know what I mean.\x07Listen, Sellbots have finished an enormous factory to pump out Sellbots 24 hours a day.\x07Get a group of Toon buddies together and squash the factory!\x07Inside Sales HQ, look for the tunnel to the Factory then board the Factory elevator.\x07Make sure you have full gags, full Laff points, and some strong Toons as guides.\x07Defeat the Foreman inside the factory to slow the Sellbot progress.\x07Sounds like a real workout, if you know what I mean.',
         LEAVING: 'See ya buddy!',
         COMPLETE: 'Hey buddy, nice work on that Factory!\x07Looks like you found part of a Cog suit.\x07It must be left over from their Cog manufacturing process.\x07That may come in handy. Keep collecting these when you have spare time.\x07Maybe when you collect an entire Cog suit it could be useful for something....'},
  4001: {GREETING: '',
@@ -1366,7 +1366,7 @@ QuestDialogDict = {
         INCOMPLETE_PROGRESS: "Found the HQ yet? You'll need to defeat some Cashbots there to scope it out."},
  6234: {GREETING: '',
         LEAVING: '',
-        QUEST: "What?! There really IS a Cashbot HQ?\x07You better go tell Nat right away!\x07Who would have guessed there'd be a Cog HQ right down the street from him?",
+        QUEST: "What?! There really IS a Money HQ?\x07You better go tell Nat right away!\x07Who would have guessed there'd be a Cog HQ right down the street from him?",
         INCOMPLETE_PROGRESS: "What did Nat have to say? You haven't seen him yet?"},
  6235: {GREETING: '',
         LEAVING: '',
@@ -1606,7 +1606,7 @@ QuestDialogDict = {
         INCOMPLETE_PROGRESS: "Not a strip of slimy kelp in the shop.\x07Can't make the cream without it."},
  7243: {GREETING: '',
         LEAVING: '',
-        QUEST: "Oooh! Very slimy kelp you've got there, _avName_.\x07Now, I just crush some pearls with the mortar and pestle.\x07Um, where's my pestle? What good is a mortar without a pestle?\x07I bet that darn Loan Shark took it when he came in here!\x07You need to help me find it! He was headed for Cashbot HQ!",
+        QUEST: "Oooh! Very slimy kelp you've got there, _avName_.\x07Now, I just crush some pearls with the mortar and pestle.\x07Um, where's my pestle? What good is a mortar without a pestle?\x07I bet that darn Loan Shark took it when he came in here!\x07You need to help me find it! He was headed for Money HQ!",
         INCOMPLETE_PROGRESS: 'I simply cannot crush the pearls without a pestle.\x07Darn those Loan Sharks!'},
  7244: {GREETING: '',
         LEAVING: '',
@@ -4603,8 +4603,8 @@ SuitInvasionBulletin = [
  '%(plural)s have taken over Toontown!!!'
 ]
 SkelecogInvasionBegin = [
- "This just in, Sell HQ's factory is going bonkers!",
- "Sell HQ's factory is pushing out incomplete cogs!",
+ "This just in, Sales HQ's factory is going bonkers!",
+ "Sales HQ's factory is pushing out incomplete cogs!",
  '%(singular)s Skelecogs have taken over Toontown!!!'
 ]
 SkelecogInvasionEnd = [
@@ -4613,7 +4613,7 @@ SkelecogInvasionEnd = [
 ]
 SkelecogInvasionBulletin = [
  'There is a Cog invasion in progress!!!',
- "Sell HQ's factory has pushed out incomplete Cogs!",
+ "Sales HQ's factory has pushed out incomplete Cogs!",
  '%(singular)s Skelecogs have taken over Toontown!!!'
 ]
 WaiterInvasionBegin = [
@@ -7065,7 +7065,7 @@ TipDict = {TIP_NONE: ('',),
              'Up to eight Toons can join together to fight the Lawbot Chief Justice.',
              'Up to eight Toons can join together to fight the Bossbot C.E.O.',
              'Inside Cog Headquarters follow stairs leading up to find your way.',
-             'Each time you battle through a Sell HQ factory, you will gain one part of your Karen Cog Disguise.',
+             'Each time you battle through a Sales HQ factory, you will gain one part of your Karen Cog Disguise.',
              'You can check the progress of your Cog Disguise in your Shticker Book.',
              'You can check your promotion progress on your Disguise Page in your Shticker Book.',
              'Make sure you have full gags and a full Laff Meter before going to Cog Headquarters.',
@@ -8334,10 +8334,10 @@ HolidayNamesInCalendar = {1: ('Summer Fireworks', 'Celebrate Summer with a firew
  92: ('Micro Manager Invasion', 'Stop the Micro Manager Cogs from invading Toontown!'),
  93: ('Number Cruncher Invasion', 'Stop the Number Cruncher Cogs from invading Toontown!'),
  95: ('Victory Parties', 'Celebrate our historic triumph against the Cogs!'),
- 96: ('Operation: Storm Sellbot', "Sell HQ is open to everyone. Let's go fight Hillary Clinton!"),
+ 96: ('Operation: Storm Sellbot', "Sales HQ is open to everyone. Let's go fight Hillary Clinton!"),
  97: ('Operation: Lawbots Lose', "Law HQ is open to everyone. Let's go fight the CJ!"),
- 98: ('Operation: Cashbot Chaos', "Cashbot HQ is open to everyone. Let's go fight Donald Trump!"),
- 99: ('Operation: Besiege Bossbot', "Boss HQ is open to everyone. Let's go fight the CEO!"),
+ 98: ('Operation: Cashbot Chaos', "Money HQ is open to everyone. Let's go fight Donald Trump!"),
+ 99: ('Operation: Besiege Bossbot', "Corp HQ is open to everyone. Let's go fight the CEO!"),
  100: ('Double Bean Days - Trolley Games', ''),
  101: ('Double Bean Days - Fishing', ''),
  102: ('Jellybean Week', 'Celebrate Jellybean Week with double Jellybean rewards!'),
