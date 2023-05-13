@@ -899,10 +899,8 @@ class DistributedPartyCannonActivity(DistributedPartyActivity):
             self.setCloudHit(*cloudColor)
 
     def d_requestCloudHit(self, cloudNumber, color):
-        self.sendUpdate('requestCloudHit', [cloudNumber,
-         color.getX(),
-         color.getY(),
-         color.getZ()])
+        a = [cloudNumber, color[0], color[1], color[2]]
+        self.sendUpdate('requestCloudHit', a)
 
     def setCloudHit(self, cloudNumber, r, g, b):
         cloud = render.find('**/cloud-%d' % cloudNumber)

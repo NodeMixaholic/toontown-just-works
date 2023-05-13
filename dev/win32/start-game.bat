@@ -19,7 +19,7 @@ set /P INPUT=Selection:
 if %INPUT%==1 (
     set TTS_GAMESERVER=127.0.0.1
 ) else if %INPUT%==2 (
-    set TTS_GAMESERVER=24.175.244.9
+    set TTS_GAMESERVER=server.sparksammy.com
 ) else if %INPUT%==4 (
     GOTO 4
 ) else if %INPUT%==5 (
@@ -33,13 +33,12 @@ if %INPUT%==1 (
 
 echo.
 
-if %INPUT%==2 (
-    set /P TTS_PLAYCOOKIE=Username: 
-) else if %INPUT%==4 (
+
+if %INPUT%==4 (
     set /P ttsUsername="Username: "
     set /P ttsPassword="Password: "
 ) else (
-    set /P TTS_PLAYCOOKIE=Username: 
+    set /P TTS_PLAYCOOKIE="Secret token:" 
 )
 
 echo.

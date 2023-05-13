@@ -38,10 +38,6 @@ if __debug__:
     from direct.stdpy import threading
 
     loadPrcFile('dependencies/config/general.prc')
-    loadPrcFile('dependencies/config/release/dev.prc')
-
-    if os.path.isfile('dependencies/config/local.prc'):
-        loadPrcFile('dependencies/config/local.prc')
 
     defaultText = ""
 from direct.directnotify.DirectNotifyGlobal import directNotify
@@ -200,4 +196,3 @@ if autoRun:
     except:
         import traceback
         traceback.print_exc()
-

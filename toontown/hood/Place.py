@@ -615,8 +615,7 @@ class Place(StateData.StateData, FriendsListManager.FriendsListManager):
                 friend = base.cr.identifyAvatar(avId)
                 if friend == None:
                     teleportDebug(requestStatus, 'friend not here, giving up')
-                    base.localAvatar.setSystemMessage(avId, OTPLocalizer.WhisperTargetLeftVisit % (friend.getName(),))
-                    friend.d_teleportGiveup(base.localAvatar.doId)
+                    base.localAvatar.d_teleportGiveup(base.localAvatar.doId, 0)
                 else:
                     def doTeleport(task):
                         avatar = base.cr.doId2do[friend.getDoId()]
