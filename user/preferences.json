@@ -8,7 +8,8 @@
     "100000017": true,
     "100000020": true,
     "100000022": true,
-    "100000025": true
+    "100000025": true,
+    "100000027": true
   },
   "acceptingNonFriendWhispers": {
     "100000001": true,
@@ -19,7 +20,8 @@
     "100000017": true,
     "100000020": true,
     "100000022": true,
-    "100000025": true
+    "100000025": true,
+    "100000027": true
   },
   "acceptingTeleport": {
     "100000001": true,
@@ -30,7 +32,8 @@
     "100000017": true,
     "100000020": true,
     "100000022": true,
-    "100000025": true
+    "100000025": true,
+    "100000027": true
   },
   "cogInterface": true,
   "fov": 84.9745864868164,
@@ -38,7 +41,7 @@
   "fullscreen": false,
   "language": "English",
   "loadDisplay": "pandagl",
-  "musicVol": 0.9587721252441406,
+  "musicVol": 0.30356067657470703,
   "res": [
     1280,
     720
